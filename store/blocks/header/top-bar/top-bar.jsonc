@@ -1,0 +1,42 @@
+{
+    "flex-layout.row#top-bar": {
+        "props" : {
+            "blockClass": "wrapper__top-bar"
+        },
+        "children": [
+           "rich-text#email-text",
+           "rich-text#phone-text",
+           "rich-text#login-text",
+           "rich-text#wishlist-text"  
+        ]
+    },
+
+    "rich-text#email-text": {
+        "props":{
+          "blockClass": ["text__top-bar", "email__top-bar"],
+          "text": "![alt text](https://via.placeholder.com/14x16) afonsoramon@gmail.com"  
+        }
+    },
+
+    "rich-text#phone-text": {
+        "props":{
+          "blockClass": ["text__top-bar", "phone__top-bar"],
+          "text": "![alt text](https://via.placeholder.com/14x16) (62) 3333-4444"  
+        }
+    },
+
+    
+    "rich-text#login-text": {
+        "props":{
+          "blockClass": ["text__top-bar", "login__top-bar"],
+          "text": "Login ![alt text](https://via.placeholder.com/14x16)"  
+        }
+    },
+
+    "rich-text#wishlist-text": {
+        "props":{
+          "blockClass": ["text__top-bar", "wishlist__top-bar"],
+          "text": "Wishlist ![alt text](https://via.placeholder.com/14x16)"  
+        }
+    }
+}
