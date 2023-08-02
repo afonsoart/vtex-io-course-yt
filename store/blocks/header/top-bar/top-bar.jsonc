@@ -14,14 +14,14 @@
     "rich-text#email-text": {
         "props":{
           "blockClass": ["text__top-bar", "email__top-bar"],
-          "text": "![alt text](https://via.placeholder.com/14x16) afonsoramon@gmail.com"  
+          "text": "![email](assets/imgs/top-bar/email.png) afonsoramon@gmail.com"  
         }
     },
 
     "rich-text#phone-text": {
         "props":{
           "blockClass": ["text__top-bar", "phone__top-bar"],
-          "text": "![alt text](https://via.placeholder.com/14x16) (62) 3333-4444"  
+          "text": "![phone](assets/imgs/top-bar/phone.png) (62) 3333-4444"  
         }
     },
 
@@ -29,14 +29,14 @@
     "rich-text#login-text": {
         "props":{
           "blockClass": ["text__top-bar", "login__top-bar"],
-          "text": "Login ![alt text](https://via.placeholder.com/14x16)"  
+          "text": "Login ![login](assets/imgs/top-bar/login.png)"  
         }
     },
 
     "rich-text#wishlist-text": {
         "props":{
           "blockClass": ["text__top-bar", "wishlist__top-bar"],
-          "text": "Wishlist ![alt text](https://via.placeholder.com/14x16)"  
+          "text": "Wishlist ![wishlist](assets/imgs/top-bar/wishlist.png)"  
         }
     }
 }
