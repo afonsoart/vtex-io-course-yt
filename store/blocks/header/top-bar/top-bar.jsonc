@@ -4,11 +4,30 @@
             "blockClass": "wrapper__top-bar"
         },
         "children": [
-           "rich-text#email-text",
-           "rich-text#phone-text",
-           "rich-text#login-text",
-           "rich-text#wishlist-text"  
+           "flex-layout.col#left",
+           "flex-layout.col#right"
         ]
+    },
+
+    "flex-layout.col#left": {
+      "children": [
+        "rich-text#email-text",
+        "rich-text#phone-text"
+      ],
+      "props": {
+        "blockClass": ["wrapper__col", "wrapper__col-left"]
+      }
+    },
+
+    "flex-layout.col#right": {
+      "children": [
+        "rich-text#login-text",
+        "rich-text#wishlist-text",
+        "rich-text#cart-text"
+      ],
+      "props": {
+        "blockClass": ["wrapper__col", "wrapper__col-right"]
+      }
     },
 
     "rich-text#email-text": {
@@ -38,5 +57,12 @@
           "blockClass": ["text__top-bar", "wishlist__top-bar"],
           "text": "Wishlist ![wishlist](assets/imgs/top-bar/wishlist.png)"  
         }
-    }
+    },
+
+    "rich-text#cart-text": {
+      "props":{
+        "blockClass": ["text__top-bar", "cart__top-bar"],
+        "text": "![cart](assets/imgs/top-bar/minicart.png)"  
+      }
+  }
 }

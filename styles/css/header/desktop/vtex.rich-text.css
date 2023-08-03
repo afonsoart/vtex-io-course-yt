@@ -2,3 +2,20 @@
     font-size: 16px;
     color: #F1F1F1;
 }
+
+.wrapper--email__top-bar,
+.wrapper--text__top-bar {
+  margin-right: 30px;
+}
+
+.wrapper--text__top-bar {
+    height: 44px;
+   display: flex;
+   align-items: center;
+}
+
+.wrapper--cart__top-bar,
+.paragraph--text__top-bar {
+  margin: 0px;
+}
+
