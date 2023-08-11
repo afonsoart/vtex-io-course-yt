@@ -30,9 +30,7 @@
       "fullWidth": true
     },
     "children": [
-      "vtex.menu@2.x:menu#websites",
-      "flex-layout.col#spacer",
-      "vtex.menu@2.x:menu#institutional"
+      "flex-layout.col#spacer"
     ]
   },
   "flex-layout.col#spacer": {
@@ -60,9 +58,8 @@
       "flex-layout.col#category-menu",
       "flex-layout.col#spacer",
       "search-bar",
-      "locale-switcher",
-      "login",
-      "minicart.v2"
+      "locale-switcher"
+      
     ]
   },
   "flex-layout.col#logo-desktop": {
@@ -81,9 +78,9 @@
     "props": {
       "title": "Logo",
       "href": "/",
-      "url": "https://storecomponents.vteximg.com.br/arquivos/store-theme-logo.png",
-      "width": "180",
-      "height": "12"
+      "url": "assets/imgs/header/logo.png",
+      "width": "98",
+      "height": "34"
     }
   },
   "header-layout.mobile": {
@@ -126,7 +123,7 @@
     "props": {
       "title": "Logo",
       "href": "/",
-      "url": "https://storecomponents.vteximg.com.br/arquivos/store-theme-logo-mobile.png",
+      "src": "assets/imgs/header/logo.png",
       "width": "77.5",
       "height": "27.5"
     }
