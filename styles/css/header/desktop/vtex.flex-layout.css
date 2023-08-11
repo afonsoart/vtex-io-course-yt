@@ -1,5 +1,11 @@
+.flexRow--main-header{
+    background-color: #fff;
+}
 .flexRowContent--main-header{
     background-color: #fff;
+    max-width: 1270px;
+    margin: auto
+    
 }
 .flexRow--wrapper__top-bar {
     background-color: #7E33E0;

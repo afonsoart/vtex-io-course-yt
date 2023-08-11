@@ -4,23 +4,25 @@
       "experimentalOptimizeRendering": true
     },
     "children": [
-      "menu-item#category-apparel",
-      "menu-item#category-home",
-      "menu-item#more"
+      "menu-item#home",
+      "menu-item#pages",
+      "menu-item#products",
+      "menu-item#blog",
+      "menu-item#shop"
     ]
   },
-  "menu-item#category-apparel": {
+  "menu-item#home": {
     "props": {
-      "id": "menu-item-category-apparel",
+      "id": "menu-item-home",
       "type": "custom",
       "iconId": null,
       "highlight": false,
       "itemProps": {
         "type": "internal",
-        "href": "/apparel---accessories/",
+        "href": "/",
         "noFollow": false,
-        "tagTitle": "Apparel & Accessories",
-        "text": "Apparel & Accessories"
+        "tagTitle": "Home",
+        "text": "Home"
       }
     },
     "blocks": [
@@ -90,7 +92,7 @@
       }
     }
   },
-  "menu-item#category-home": {
+  "menu-item#pages": {
     "props": {
       "id": "menu-item-category-home",
       "type": "custom",
@@ -100,12 +102,59 @@
         "type": "internal",
         "href": "/home---decor/",
         "noFollow": false,
-        "tagTitle": "Home & Decor",
-        "text": "Home & Decor"
+        "tagTitle": "Pages",
+        "text": "Pages"
       }
     }
   },
-  "menu-item#more": {
+
+  "menu-item#blog": {
+    "props": {
+      "id": "menu-item-category-home",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/home---decor/",
+        "noFollow": false,
+        "tagTitle": "Blog",
+        "text": "Blog"
+      }
+    }
+  },
+
+  "menu-item#shop": {
+    "props": {
+      "id": "menu-item-category-home",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/home---decor/",
+        "noFollow": false,
+        "tagTitle": "Shop",
+        "text": "Shop"
+      }
+    }
+  },
+  "menu-item#contact": {
+    "props": {
+      "id": "menu-item-category-home",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/home---decor/",
+        "noFollow": false,
+        "tagTitle": "Contact",
+        "text": "Contact"
+      }
+    }
+  },
+  "menu-item#products": {
     "props": {
       "id": "menu-item-custom-sale",
       "type": "custom",
@@ -115,8 +164,8 @@
         "type": "internal",
         "href": "#",
         "noFollow": true,
-        "tagTitle": "More",
-        "text": "More"
+        "tagTitle": "Products",
+        "text": "Products"
       }
     },
     "blocks": [
@@ -144,6 +193,7 @@
   },
   "flex-layout.col#menu-more-2": {
     "children": [
+    
     ]
   },
   "vtex.menu@2.x:menu#more": {
