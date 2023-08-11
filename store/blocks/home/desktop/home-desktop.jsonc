@@ -1,6 +1,6 @@
 {
     "responsive-layout.desktop#home": {
-        "children": []
+        "children": ["list-context.image-list#banner"]
     },
 
     "list-context.image-list#banner": {
@@ -8,27 +8,27 @@
         "props": {
             "height": 764,
             "images": [
-                {   //desktop
+                {   
                     "image": "assets/imgs/banners/banner-full.png",
                     "mobileImage": ""
                 },
-                {   //desktop
+                {  
                     "image": "assets/imgs/banners/banner-full.png",
                     "mobileImage": ""
-                }
+                }  
             ]
         }
     },
 
     "slider-layout#banner": {
         "props": {
-            "itemPerPage": {
+            "itemsPerPage": {
                 "desktop": 1,
                 "tablet": 1,
                 "phone": 1
             },
             "infinite": true,
-            "showNavigationArrpws": "never",
+            "showNavigationArrows": "never",
             "showPaginationDots": "always"
         }
     }
