@@ -18,19 +18,19 @@
 }
 
 .nameContainer {
-  justify-content: start;
+  justify-content: center;
   padding-top: 1rem;
   padding-bottom: 1rem;
 }
 
 .brandName {
-  font-weight: 600;
+  color: #FB2E86;
   font-size: 18px;
-  color: #2E2E2E;
+  font-weight: 700;
 }
 
 .container {
-  text-align: start;
+  text-align: center;
 }
 
 .imageContainer {
