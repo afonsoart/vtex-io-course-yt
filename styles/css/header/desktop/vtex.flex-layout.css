@@ -25,3 +25,12 @@
   display: flex;
   justify-content: end;
 }
+
+.icon-minicart {
+    display: flex;
+    margin: auto;
+}
+
+.cartIcon {
+    padding: 0;
+}

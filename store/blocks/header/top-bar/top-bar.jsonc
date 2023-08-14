@@ -21,9 +21,10 @@
 
     "flex-layout.col#right": {
       "children": [
-        "rich-text#login-text",
+        "login",
         "rich-text#wishlist-text",
-        "rich-text#cart-text"
+        "minicart.v2"
+
       ],
       "props": {
         "blockClass": ["wrapper__col", "wrapper__col-right"]
@@ -45,12 +46,21 @@
     },
 
     
-    "rich-text#login-text": {
-        "props":{
-          "blockClass": ["text__top-bar", "login__top-bar"],
-          "text": "Login ![login](assets/imgs/top-bar/login.png)"  
-        }
-    },
+    "login": {
+      "props": {
+          "showIconProfile": false,
+          "iconLabel": "Login",
+          "labelClasses": [
+              "login-icon"
+          ],
+          "providerPasswordButtonLabel": "Entrar com e-mail",
+          "emailAndPasswordTitle": "Entrar com e-mail e senha",
+          "accessCodeTitle": "Receber código de acesso ",
+          "emailPraceholder": "ex: exemplo@mail.com.br",
+          "passwordPlaceholder": "adicionar sua senha",
+          "showPasswordVerificationIntoTooltip": true
+      }
+     },
 
     "rich-text#wishlist-text": {
         "props":{
@@ -59,10 +69,7 @@
         }
     },
 
-    "rich-text#cart-text": {
-      "props":{
-        "blockClass": ["text__top-bar", "cart__top-bar"],
-        "text": "![cart](assets/imgs/top-bar/minicart.png)"  
-      }
-  }
+    "minicart.v2": {
+    }
+    
 }

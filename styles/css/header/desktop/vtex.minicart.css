@@ -1,0 +1,14 @@
+.vtex-button:hover {
+background-color: #FAFAFA;
+}
+
+
+.openIconContainer,
+.openIconContainer :global(.vtex-button__label),
+.openIconContainer :global(.vtex-button) {
+	padding: 0 !important;
+	margin: 0;
+	background: transparent !important;
+	outline: none;
+	border: none;
+}

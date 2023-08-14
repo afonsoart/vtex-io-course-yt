@@ -1,0 +1,38 @@
+
+.container :global(.vtex-button__label) {
+	outline: none;
+	border: none;
+	width: 100%;
+	padding: 0 !important;
+	display: flex;
+	align-items: center;
+    padding-right: 10px;
+}
+
+
+.label {
+font-size: 16px;
+color: #fff;
+text-transform: capitalize;
+}
+
+.container :global(.vtex-button__label)::after {
+	content: "";
+	background: url("assets/imgs/top-bar/login.png") center no-repeat;
+	width: 40px;
+	height: 40px;
+	display: block;
+}
+
+
+.container :global(.vtex-button):focus,
+.container :global(.vtex-button):hover,
+.container :global(.vtex-button):hover .label {
+	outline: none;
+	background: transparent !important;
+	color: #FAFAFAFA ;
+    opacity: .8;
+}
+
+
+
