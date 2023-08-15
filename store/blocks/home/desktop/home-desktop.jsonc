@@ -3,7 +3,11 @@
         "children":
         [
             "list-context.image-list#banner",
-            "flex-layout.row#shelf"
+            "rich-text#shelf-title",
+            "flex-layout.row#shelf",
+            "rich-text#shelf-title-leatest-product",
+            "flex-layout.row#shelf-leatest-products",
+            "flex-layout.row#what-we-offer"
         ]
     },
 
@@ -36,6 +40,14 @@
             "showPaginationDots": "always"
         }
     },
+
+    "rich-text#shelf-title": {
+      "props": {
+        "text": "## Produtos em Destaque",
+        "blockClass": "shelfTitle"
+      }
+    },
+
     "flex-layout.row#shelf": {
         "children": ["list-context.product-list#demo1"]
       },
@@ -57,5 +69,95 @@
           "fullWidth": false,
           "blockClass": "shelf"
         }
-      }
+      },
+      "rich-text#shelf-title-leatest-product": {
+        "props": {
+          "text": "## Produtos mais recentes",
+          "blockClass": "shelfTitle"
+        }
+      },
+  
+      "flex-layout.row#shelf-leatest-products": {
+          "children": ["list-context.product-list#demo1"]
+        },
+        "list-context.product-list#leatest-products": {
+          "blocks": ["product-summary.shelf"],
+          "children": ["slider-layout#demo-products"],
+          "props": {
+            "orderBy": "OrderByReleaseDateDESC"
+          }
+        },
+        "slider-layout#leatest-products": {
+          "props": {
+            "itemsPerPage": {
+              "desktop": 4,
+              "tablet": 3,
+              "phone": 1
+            },
+            "infinite": true,
+            "fullWidth": false,
+            "blockClass": "shelf"
+          }
+        },
+
+        "flex-layout.row#what-we-offer": {
+          "children": [
+              "flex-layout.col#what-we-offer-1",
+              "flex-layout.col#what-we-offer-2",
+              "flex-layout.col#what-we-offer-3",
+              "flex-layout.col#what-we-offer-4"
+          ],
+          "props": {
+            "preventHorizontalStretch": false,
+            "preventVerticalStretch": true,
+            "fullWidth": false,
+            "colGap": 10,
+            "blockClass": "what-we-offer",
+            "colJustify": "justify-content"
+          }
+        },
+
+        "flex-layout.col#what-we-offer-1": {
+          "children": ["image#what-we-offer"]
+        },
+
+        "image#what-we-offer": {
+          "props": {
+            "src": "assets/imgs/home/free-delivery.png",
+            "blockClass": "icons-home-img"
+          }
+        },
+
+        "flex-layout.col#what-we-offer-2": {
+          "children": ["image#what-we-offer-2"]
+        },
+
+        "image#what-we-offer-2": {
+          "props": {
+            "src": "assets/imgs/home/cashback.png",
+            "blockClass": "icons-home-img"
+          }
+        },
+
+        "flex-layout.col#what-we-offer-3": {
+          "children": ["image#what-we-offer-3"]
+        },
+
+        "image#what-we-offer-3": {
+          "props": {
+            "src": "assets/imgs/home/premium-quality.png",
+            "blockClass": "icons-home-img"
+          }
+        },
+
+        "flex-layout.col#what-we-offer-4": {
+          "children": ["image#what-we-offer-4"]
+        },
+
+        "image#what-we-offer-4": {
+          "props": {
+            "src": "assets/imgs/home/24-hours-support.png",
+            "blockClass": "icons-home-img"
+          }
+        }
 }

@@ -6,6 +6,7 @@
 }
 
 .productHighlightText {
+  display: none;
   background: #FB2E86;
   border-radius: 20px;
   padding: 5px 20px;
