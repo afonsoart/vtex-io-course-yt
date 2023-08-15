@@ -7,7 +7,9 @@
             "flex-layout.row#shelf",
             "rich-text#shelf-title-leatest-product",
             "flex-layout.row#shelf-leatest-products",
+            "rich-text#what-we-offer-title",
             "flex-layout.row#what-we-offer"
+           
         ]
     },
 
@@ -100,6 +102,13 @@
           }
         },
 
+        "rich-text#what-we-offer-title": {
+          "props": {
+            "text": "## O que Shopex oferece!",
+            "blockClass": "shelfTitle"
+          }
+        },
+
         "flex-layout.row#what-we-offer": {
           "children": [
               "flex-layout.col#what-we-offer-1",
@@ -110,8 +119,10 @@
           "props": {
             "preventHorizontalStretch": false,
             "preventVerticalStretch": true,
+            "horizontalAlign": "center",
+            "colSizing": "auto",
             "fullWidth": false,
-            "colGap": 10,
+            "colGap": 0,
             "blockClass": "what-we-offer",
             "colJustify": "justify-content"
           }
@@ -123,7 +134,7 @@
 
         "image#what-we-offer": {
           "props": {
-            "src": "assets/imgs/home/free-delivery.png",
+            "src": "assets/imgs/home/img-what-we-offer-01.png",
             "blockClass": "icons-home-img"
           }
         },
@@ -134,7 +145,7 @@
 
         "image#what-we-offer-2": {
           "props": {
-            "src": "assets/imgs/home/cashback.png",
+            "src": "assets/imgs/home/img-what-we-offer-02.png",
             "blockClass": "icons-home-img"
           }
         },
@@ -145,7 +156,7 @@
 
         "image#what-we-offer-3": {
           "props": {
-            "src": "assets/imgs/home/premium-quality.png",
+            "src": "assets/imgs/home/img-what-we-offer-03.png",
             "blockClass": "icons-home-img"
           }
         },
@@ -156,7 +167,7 @@
 
         "image#what-we-offer-4": {
           "props": {
-            "src": "assets/imgs/home/24-hours-support.png",
+            "src": "assets/imgs/home/img-what-we-offer-04.png",
             "blockClass": "icons-home-img"
           }
         }
