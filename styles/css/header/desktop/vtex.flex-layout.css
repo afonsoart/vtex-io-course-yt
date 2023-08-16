@@ -1,8 +1,8 @@
 .flexRow--main-header{
-    background-color: #fff;
+    background-color: #f0f0f0;
 }
 .flexRowContent--main-header{
-    background-color: #fff;
+    background-color: #f0f0f0;
     max-width: 1270px;
     margin: auto
     
@@ -35,3 +35,6 @@
     padding: 0;
 }
 
+.flexRowContent--main-header {
+  background-color: #f0f0f0;
+}
