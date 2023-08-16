@@ -8,7 +8,8 @@
             "rich-text#shelf-title-leatest-product",
             "flex-layout.row#shelf-leatest-products",
             "rich-text#what-we-offer-title",
-            "flex-layout.row#what-we-offer"
+            "flex-layout.row#what-we-offer",
+            "stack-layout#newsletter"
            
         ]
     },
@@ -43,6 +44,7 @@
         }
     },
 
+    // Start Featured Products
     "rich-text#shelf-title": {
       "props": {
         "text": "## Produtos em Destaque",
@@ -72,6 +74,9 @@
           "blockClass": "shelf"
         }
       },
+      //End Featured Products
+
+      //Start Leatest Products section
       "rich-text#shelf-title-leatest-product": {
         "props": {
           "text": "## Produtos mais recentes",
@@ -101,7 +106,9 @@
             "blockClass": "shelf"
           }
         },
+        // End Leatest Products section
 
+        // Start What we offer section
         "rich-text#what-we-offer-title": {
           "props": {
             "text": "## O que Shopex oferece!",
@@ -169,6 +176,48 @@
           "props": {
             "src": "assets/imgs/home/img-what-we-offer-04.png",
             "blockClass": "icons-home-img"
+          }
+        },
+        // End What we offer section
+
+
+        "stack-layout#newsletter": {
+          "children": [
+                "image#newsletter",
+                "link#newsletter",
+                "rich-text#newsletter"
+               ]
+        },
+
+        "image#newsletter": {
+          "props": {
+            "blockClass": "cover",
+            "width": "100%",
+            "height": 462,
+            "src": "assets/imgs/home/banner-newsletter.png"
+          }
+        },
+
+        "link#newsletter": {
+          "props": {
+            "displayMode": "button",
+            "buttonProps": {
+              "variant": "primary",
+              "size": "large"
+            },
+
+            "href": "/",
+            "label": "Realize a sua inscrição agora mesmo!"
+          }
+        },
+
+        "rich-text#newsletter": {
+          "props": {
+            "text": "## Obtenha a atualização mais recente ao se inscrever em nosso Newslater",
+            "blockClass": "newsLetterTitle",
+            "textAlignment": "CENTER",
+            "textPosition": "CENTER",
+            "textColor": "hekto-pink"
           }
         }
 }
