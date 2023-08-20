@@ -10,10 +10,10 @@
             "rich-text#what-we-offer-title",
             "flex-layout.row#what-we-offer",
             "stack-layout#newsletter"
-           
         ]
     },
 
+    // Start Banners Home
     "list-context.image-list#banner": {
         "children": ["slider-layout#banner"],
         "props": {
